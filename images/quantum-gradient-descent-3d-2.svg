@@ -1,0 +1,94 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Grid lines -->
+  <g stroke="#ccc" stroke-width="0.5">
+    <!-- X-Z plane grid -->
+    <line x1="100" y1="450" x2="700" y2="450" />
+    <line x1="100" y1="350" x2="700" y2="350" />
+    <line x1="100" y1="250" x2="700" y2="250" />
+    
+    <line x1="200" y1="150" x2="200" y2="450" />
+    <line x1="400" y1="150" x2="400" y2="450" />
+    <line x1="600" y1="150" x2="600" y2="450" />
+    
+    <!-- Perspective lines for Y dimension -->
+    <line x1="100" y1="450" x2="200" y2="400" stroke-dasharray="5,5" />
+    <line x1="700" y1="450" x2="800" y2="400" stroke-dasharray="5,5" />
+    <line x1="400" y1="150" x2="500" y2="100" stroke-dasharray="5,5" />
+  </g>
+  
+  <!-- Axes labels -->
+  <g font-family="Arial" font-size="16" fill="#333">
+    <text x="710" y="470">θ₁</text>
+    <text x="100" y="130">Cost</text>
+    <text x="780" y="400" transform="rotate(0)">θ₂</text>
+  </g>
+  
+  <!-- Cost function surface (represented as contour ellipses from top view) -->
+  <g fill-opacity="0.15" stroke="#666" stroke-width="1">
+    <!-- Nested ellipses representing contour levels -->
+    <ellipse cx="400" cy="300" rx="250" ry="120" fill="#8844ee" transform="rotate(-15, 400, 300)" />
+    <ellipse cx="400" cy="300" rx="200" ry="100" fill="#6633cc" transform="rotate(-15, 400, 300)" />
+    <ellipse cx="400" cy="300" rx="150" ry="80" fill="#5522aa" transform="rotate(-15, 400, 300)" />
+    <ellipse cx="400" cy="300" rx="100" ry="60" fill="#441188" transform="rotate(-15, 400, 300)" />
+    <ellipse cx="400" cy="300" rx="50" ry="30" fill="#330066" transform="rotate(-15, 400, 300)" />
+  </g>
+  
+  <!-- 3D surface representation -->
+  <g stroke="#555" stroke-width="1" fill="none">
+    <!-- Curved path representations of the surface -->
+    <path d="M200,400 Q400,250 600,400" />
+    <path d="M250,380 Q400,230 550,380" />
+    <path d="M300,360 Q400,210 500,360" />
+    <path d="M350,340 Q400,190 450,340" />
+    
+    <path d="M200,400 Q250,350 300,300 Q350,250 400,200" stroke-dasharray="5,5" />
+    <path d="M600,400 Q550,350 500,300 Q450,250 400,200" stroke-dasharray="5,5" />
+  </g>
+  
+  <!-- Gradient vectors - Smaller dots and arrowheads -->
+  <g stroke="#e63946" stroke-width="2">
+    <!-- Point 1 -->
+    <circle cx="550" cy="380" r="4" fill="#e63946" />
+    <line x1="550" y1="380" x2="508" y2="357" stroke-width="2" />
+    <polygon points="508,357 513,355 511,362" fill="#e63946" />
+    
+    <!-- Point 2 -->
+    <circle cx="505" cy="355" r="4" fill="#e63946" />
+    <line x1="505" y1="355" x2="473" y2="337" stroke-width="2" />
+    <polygon points="473,337 478,335 476,342" fill="#e63946" />
+    
+    <!-- Point 3 -->
+    <circle cx="470" cy="335" r="4" fill="#e63946" />
+    <line x1="470" y1="335" x2="443" y2="327" stroke-width="2" />
+    <polygon points="443,327 448,325 446,332" fill="#e63946" />
+    
+    <!-- Point 4 -->
+    <circle cx="440" cy="325" r="4" fill="#e63946" />
+    <line x1="440" y1="325" x2="418" y2="317" stroke-width="2" />
+    <polygon points="418,317 423,315 421,322" fill="#e63946" />
+    
+    <!-- Global minimum -->
+    <circle cx="400" cy="300" r="6" fill="#0077b6" stroke="#0077b6" />
+  </g>
+  
+  <!-- Annotations -->
+  <g font-family="Arial" font-size="14" fill="#333">
+    <text x="560" y="370">Start</text>
+    <text x="380" y="280">Global Minimum</text>
+    <text x="480" y="420">Gradient Descent Path</text>
+    <text x="620" y="320">Cost Landscape</text>
+    <text x="200" y="200">Higher Cost</text>
+    <text x="500" y="200">Parameter Space</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    Gradient Descent in Quantum Parameter Space
+  </text>
+  <text x="400" y="80" font-family="Arial" font-size="16" text-anchor="middle" fill="#555">
+    Optimizing parameters θ₁ and θ₂ to minimize cost function
+  </text>
+</svg>

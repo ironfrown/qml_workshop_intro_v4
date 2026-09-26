@@ -1,0 +1,92 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Axes -->
+  <g stroke="#aaa" stroke-width="1">
+    <line x1="100" y1="450" x2="700" y2="450" />
+    <line x1="100" y1="450" x2="100" y2="150" />
+    <line x1="100" y1="450" x2="200" y2="500" />
+  </g>
+  
+  <!-- Cost function surface - HIGHLY CORRELATED due to entanglement (narrow ellipses) -->
+  <g fill-opacity="0.15" stroke="#666" stroke-width="1">
+    <!-- Nested highly elongated ellipses representing entanglement-induced correlation -->
+    <ellipse cx="400" cy="300" rx="250" ry="50" fill="#8844ee" transform="rotate(30, 400, 300)" />
+    <ellipse cx="400" cy="300" rx="200" ry="40" fill="#6633cc" transform="rotate(30, 400, 300)" />
+    <ellipse cx="400" cy="300" rx="150" ry="30" fill="#5522aa" transform="rotate(30, 400, 300)" />
+    <ellipse cx="400" cy="300" rx="100" ry="20" fill="#441188" transform="rotate(30, 400, 300)" />
+    <ellipse cx="400" cy="300" rx="50" ry="10" fill="#330066" transform="rotate(30, 400, 300)" />
+  </g>
+  
+  <!-- Axes labels -->
+  <g font-family="Arial" font-size="16" fill="#333">
+    <text x="710" y="470">θ₁ (Qubit 1)</text>
+    <text x="70" y="130">Cost</text>
+    <text x="220" y="530">θ₂ (Qubit 2)</text>
+  </g>
+  
+  <!-- Gradient vectors - Showing correlated direction -->
+  <g stroke="#e63946" stroke-width="2">
+    <!-- Point 1 -->
+    <circle cx="550" cy="380" r="4" fill="#e63946" />
+    <line x1="550" y1="380" x2="508" y2="357" stroke-width="2" />
+    <polygon points="508,357 513,355 511,362" fill="#e63946" />
+    
+    <!-- Point 2 -->
+    <circle cx="505" cy="355" r="4" fill="#e63946" />
+    <line x1="505" y1="355" x2="473" y2="337" stroke-width="2" />
+    <polygon points="473,337 478,335 476,342" fill="#e63946" />
+    
+    <!-- Point 3 -->
+    <circle cx="470" cy="335" r="4" fill="#e63946" />
+    <line x1="470" y1="335" x2="443" y2="327" stroke-width="2" />
+    <polygon points="443,327 448,325 446,332" fill="#e63946" />
+    
+    <!-- Point 4 -->
+    <circle cx="440" cy="325" r="4" fill="#e63946" />
+    <line x1="440" y1="325" x2="418" y2="317" stroke-width="2" />
+    <polygon points="418,317 423,315 421,322" fill="#e63946" />
+    
+    <!-- Global minimum -->
+    <circle cx="400" cy="300" r="6" fill="#0077b6" stroke="#0077b6" />
+  </g>
+  
+  <!-- Qubit icons and entanglement -->
+  <g>
+    <!-- Qubit icons -->
+    <circle cx="280" cy="200" r="15" fill="#6633cc" fill-opacity="0.3" stroke="#6633cc" stroke-width="1.5" />
+    <text x="280" y="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#6633cc">Q₁</text>
+    
+    <circle cx="520" cy="200" r="15" fill="#6633cc" fill-opacity="0.3" stroke="#6633cc" stroke-width="1.5" />
+    <text x="520" y="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#6633cc">Q₂</text>
+    
+    <!-- Parameter Correlation label - moved higher -->
+    <text x="400" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#e63946">Parameter Correlation</text>
+    
+    <!-- Parameter correlation arc - in red -->
+    <path d="M295,190 C340,160 460,160 505,190" stroke="#e63946" stroke-width="1.5" stroke-dasharray="3,3" fill="none" />
+    
+    <!-- Entanglement arc - in purple, with no fill -->
+    <path d="M295,210 C340,180 460,180 505,210" stroke="#6633cc" stroke-width="1.5" stroke-dasharray="3,3" fill="none" />
+    
+    <!-- Entanglement label - moved higher -->
+    <text x="400" y="220" font-family="Arial" font-size="12" text-anchor="middle" fill="#6633cc">Entanglement</text>
+  </g>
+  
+  <!-- Annotations -->
+  <g font-family="Arial" font-size="14" fill="#333">
+    <text x="560" y="370">Start</text>
+    <text x="380" y="280">Global Minimum</text>
+    <text x="580" y="300">Narrow Valley</text>
+    <text x="180" y="350">Due to Entanglement</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">
+    Parameter Space with Entangled Qubit Gradients
+  </text>
+  <text x="400" y="80" font-family="Arial" font-size="16" text-anchor="middle" fill="#555">
+    Correlated gradient landscape due to quantum entanglement
+  </text>
+</svg>

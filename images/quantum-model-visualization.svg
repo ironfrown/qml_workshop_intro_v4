@@ -1,0 +1,99 @@
+<svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for gradients and markers -->
+  <defs>
+    <!-- Surface gradient -->
+    <linearGradient id="surfaceGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a9be6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#b4e0ff" stop-opacity="0.8" />
+    </linearGradient>
+    
+    <!-- Arrow marker for optimization path -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9.5" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff3333"/>
+    </marker>
+  </defs>
+  
+  <!-- Coordinate axes -->
+  <g stroke="#333" stroke-width="1.5">
+    <line x1="250" y1="330" x2="450" y2="280" stroke-dasharray="5,3" />
+    <line x1="250" y1="330" x2="50" y2="280" stroke-dasharray="5,3" />
+    <line x1="250" y1="330" x2="250" y2="40" stroke-dasharray="5,3" />
+    
+    <!-- Axis labels -->
+    <text x="455" y="295" font-size="14" fill="#333">θ₁</text>
+    <text x="40" y="295" font-size="14" fill="#333">θ₂</text>
+    <text x="260" y="40" font-size="14" fill="#333">Energy</text>
+  </g>
+  
+  <!-- 3D Quantum Model Surface (concave) - expanded to contain cost line -->
+  <g>
+    <!-- Main surface with proper valley -->
+    <path d="M 250,300 
+             C 150,250 80,200 50,180 
+             L 250,120 
+             C 350,150 420,200 450,180 
+             L 250,300 Z" 
+          fill="url(#surfaceGradient)" 
+          stroke="#5588aa" 
+          stroke-width="1.5" />
+    
+    <!-- Additional surface elements for 3D perspective -->
+    <path d="M 250,300 
+             C 150,250 80,200 50,180 
+             L 50,200 
+             C 120,260 180,290 250,320 
+             C 320,290 380,260 450,200
+             L 450,180
+             C 420,200 350,150 250,120 Z" 
+          fill="url(#surfaceGradient)" 
+          fill-opacity="0.3"
+          stroke="#5588aa" 
+          stroke-width="1" 
+          stroke-opacity="0.5" />
+    
+    <!-- Cost landscape - manifold patch (keeping dashed curve as is but fully contained within surface) -->
+    <path d="M 130,160 
+             C 170,150 210,160 250,200 
+             C 290,240 330,160 370,170" 
+          fill="none" 
+          stroke="#0066cc" 
+          stroke-width="2.5" 
+          stroke-dasharray="6,3" />
+    
+    <!-- QNG optimizer path (keeping as is) -->
+    <path d="M 370,170 
+             C 330,160 290,240 250,200" 
+          fill="none" 
+          stroke="#ff3333" 
+          stroke-width="2"
+          marker-end="url(#arrowhead)" />
+    
+    <!-- Local minimum (keeping as is) -->
+    <circle cx="250" cy="200" r="5" fill="#4477aa" />
+    
+    <!-- Global minimum -->
+    <circle cx="250" cy="300" r="6" fill="#0033aa" />
+  </g>
+  
+  <text x="250" y="30" text-anchor="middle" font-size="16" font-weight="bold">
+    Quantum Model Parameter Space in Hilbert Space
+  </text>
+  
+  <!-- Legend repositioned to a single row at the bottom -->
+  <g transform="translate(30, 370)">
+    <rect x="0" y="0" width="440" height="40" fill="white" fill-opacity="0.8" rx="5" ry="5" stroke="#999"/>
+    
+    <circle cx="25" cy="20" r="5" fill="#0033aa" />
+    <text x="37" y="25" font-size="12">Global Minimum</text>
+    
+    <circle cx="140" cy="20" r="5" fill="#4477aa" />
+    <text x="152" y="25" font-size="12">Local Minimum</text>
+    
+    <line x1="240" y1="20" x2="260" y2="20" stroke="#0066cc" stroke-width="2.5" stroke-dasharray="6,3" />
+    <text x="270" y="25" font-size="12">Cost Landscape</text>
+    
+    <line x1="360" y1="20" x2="380" y2="20" stroke="#ff3333" stroke-width="2" />
+    <text x="390" y="25" font-size="12">QNG Path</text>
+  </g>
+</svg>
