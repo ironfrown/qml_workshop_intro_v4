@@ -104,5 +104,11 @@ The **requirements.txt** file was tested for installation on
 Ubuntu 22.04-24.04, Windows 11 and MacOS Sequoia 15.3.1 (with M3 procesor).
 
 ### License
-This project is licensed under the [GNU General Public License v3](./LICENSE).
-The GPL v3 license requires attribution for modifications and derivatives, ensuring that users know which versions are changed and to protect the reputations of original authors.
+Unless stated otherwise, this project and all its parts are licensed under the [GNU General Public License v3](./LICENSE).
+The GPL v3 license requires attribution for modifications and derivatives, ensuring that users know which versions are changed and to protect the reputations of the original authors.
+
+All presentation slides are licensed under the [Creative Commons CC BY-NC-ND v4.0](https://creativecommons.org/cc-licenses/).<br>
+The meaning of the adopted __CC__ license permissions: 
+- __BY__ credit must be given to the creator.
+- __NC__ Only noncommercial uses of the work are permitted.
+- __ND__ No derivatives or adaptations of the work are permitted.
