@@ -86,17 +86,21 @@ Before attempting the workshop, we recommend to do some preparation first:
     - Study two workshop notebooks in the "Explore" section (see table below) (1 hour)
     - You are now ready!
 
-### Requirements
-- Set up a virtual environment with **venv** or **anaconda** for Python 3.11 and activate it
+### Requirements for PennyLane 0.42.3
+- Set up a virtual environment with **venv** or **anaconda** for Python 3.11 or above and activate it
+  - Note that we have tested the notebooks compatibility with PennyLane 0.45.1 on Linux only.<br>
+    It works well and is still compatible with Python 11.<br>
+    However, PennyLane 0.45.1 recommends installation with Python 12, <br>
+    which ensures that all specialised plugins (such as Qiskit) will also work.
 - Then install all software using **requirements.txt** file (available here):
     - pip install -r \<place-you-saved-it\>/requirements.txt
-- Or install by hand by following these instructions:
-    - pip install pennylane==0.42.3 pennylane-lightning==0.42.0 (PennyLane)
-    - pip install scikit-learn==1.7.2 pandas==2.3.2 (ML)
-    - pip install matplotlib==3.10.6 plotly==6.3.0 seaborn==0.13.2 pillow==11.3.0 (plots and images)
-    - pip install jupyter==1.1.1 jupyterlab==4.4.7 (running jupyter notebooks)
-    - pip install kagglehub==0.3.13 ucimlrepo==0.0.7 (data access)
-    - pip install pdflatex (optionally to plot and export some plots and tables to latex)
+- Or install by hand by following these instructions (ignore comments in brackets):
+    - pip install pennylane==0.42.3 pennylane-lightning==0.42.0 #(PennyLane)
+    - pip install scikit-learn==1.7.2 pandas==2.3.2 #(ML)
+    - pip install matplotlib==3.10.6 plotly==6.3.0 seaborn==0.13.2 pillow==11.3.0 #(plots and images)
+    - pip install jupyter==1.1.1 jupyterlab==4.4.7 #(running jupyter notebooks)
+    - pip install kagglehub==0.3.13 ucimlrepo==0.0.7 #(data access)
+    - pip install pdflatex #(optionally to plot and export some plots and tables to latex)
     - install [PyTorch](https://pytorch.org/get-started/locally/), as per web site instructions, also add:<br>
       pip install torchvision torchaudio torchsummary torcheval torchmetrics
 
