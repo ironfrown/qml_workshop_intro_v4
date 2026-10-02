@@ -90,7 +90,7 @@ Before attempting the workshop, we recommend to do some preparation first:
     - Study two workshop notebooks in the "Explore" section (see table below) (1 hour)
     - You are now ready!
 
-### Requirements for PennyLane 0.42.3
+### Requirements for PennyLane 0.42.2+ (Optionally 0.45)
 - Set up a virtual environment with **venv** or **anaconda** for Python 3.11 or above and activate it
   - Note that we have tested the notebooks compatibility with PennyLane 0.45.1 on Linux only.<br>
     It works well and is still compatible with Python 11.<br>
