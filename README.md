@@ -1,16 +1,20 @@
 ## An introduction to QML with PennyLane and PyTorch (October 2026)
 - **Author:** [Jacob Cybulski](https://jacobcybulski.com/) ([LinkedIn](https://www.linkedin.com/in/jacobcybulski/)), *Enquanted*
-- **Mentors:**
-      [Tomasz Rybotycki](https://www.linkedin.com/in/tomasz-rybotycki-01192582/),
-      [Sebastian Zając](https://www.linkedin.com/in/sebastianzajac/),
-      [Paweł Gora](https://www.linkedin.com/in/pawelgora/),
-      [Ola Tarig](https://www.linkedin.com/in/ola-tarig/),
-      [Mohamedelfateh Seedahmed](https://www.linkedin.com/in/mohamedelfatih-seedahmed-077b65245/),
-      [Khulud Almutairi](https://www.linkedin.com/in/khulud-almutairi-493501251/)
 - **Associated with:**
       [QPoland](https://qworld.net/qpoland/),
       [QSaudiArabia](https://qworld.net/qsaudiarabia/), and
       [Fundacja Quantum AI](https://www.qaif.org/)
+- **Mentors:**<br>
+      QPoland -
+      [__Paweł Gora__](https://www.linkedin.com/in/pawelgora/),
+      [Sebastian Zając](https://www.linkedin.com/in/sebastianzajac/),
+      [Tomasz Rybotycki](https://www.linkedin.com/in/tomasz-rybotycki-01192582/).
+      <br>QSaudiArabia -
+      [__Khulud Almutairi__](https://www.linkedin.com/in/khulud-almutairi-493501251/),
+      [Abrar](https://www.linkedin.com/in/abrar-al/)
+      [Joud Alshehri](https://www.linkedin.com/in/joud-alshehri-252307120/),
+      [Mohamedelfateh Seedahmed](https://www.linkedin.com/in/mohamedelfatih-seedahmed-077b65245/),
+      [Ola Tarig](https://www.linkedin.com/in/ola-tarig/).
 - **Aims:** To explore the creation and use of quantum machine learning models in PennyLane (PL) and PyTorch.
 - **Description:** This Quantum Machine Learning (QML) workshop provides an introduction to Quantum Machine Learning using PennyLane and PyTorch, with hands-on exercises and take-home challenges. The workshop includes four practical sessions that cover the QML concepts, models, and techniques. The sessions explore development of quantum estimators and classifiers, their training with various optimisers, loss and cost functions, as well as model testing and scoring using variety of metrics. It finally, explains how to create hybrid quantum-classical QML models.
 - **Release Date:**
