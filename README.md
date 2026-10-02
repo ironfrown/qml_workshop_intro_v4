@@ -18,9 +18,9 @@
 - **Aims:** To explore the creation and use of quantum machine learning models in PennyLane (PL) and PyTorch.
 - **Description:** This Quantum Machine Learning (QML) workshop provides an introduction to Quantum Machine Learning using PennyLane and PyTorch, with hands-on exercises and take-home challenges. The workshop includes four practical sessions that cover the QML concepts, models, and techniques. The sessions explore development of quantum estimators and classifiers, their training with various optimisers, loss and cost functions, as well as model testing and scoring using variety of metrics. It finally, explains how to create hybrid quantum-classical QML models.
 - **Release Date:**
-  - _**October, 2 2026:**_ The final versions will be made available 1 day before the workshop
+  - _**October 2, 2026:**_ The final versions of session resources will be made available 1 day before its presentation.
 - **Last Update:**
-  - _**October, 2 2026:**_ Update to all notes.
+  - _**October 2, 2026:**_ Update to all notes.
 
 ### Workshop structure and important notebooks
 
@@ -29,9 +29,9 @@ Note however that they may be updated at any time!
 
 | Session | File | Description |
 | :- | :- | :- |
-| *Explore&nbsp;1* | s00_explore_tiny_model_vX_x.ipynb | **Basic:** Explains QML principles using PL |
-| *Explore&nbsp;2* | s00_explore_meas_tests_vX_x.ipynb | **Medium:** Explains data encoding and measurements in PL |
-| *Explore&nbsp;3* | s00_explore_hybrid_models_vX_x.ipynb | **Advanced:** Explains how to build hybrid models in PL and Torch |
+| *Explore* | s00_explore_tiny_model_vX_x.ipynb | **Basic:** Explains QML principles using PL |
+|  | s00_explore_meas_tests_vX_x.ipynb | **Medium:** Explains data encoding and measurements in PL |
+|  | s00_explore_hybrid_models_vX_x.ipynb | **Advanced:** Explains how to build hybrid models in PL and Torch |
 |  |  |  |
 | *Session&nbsp;1* | s01_simple_model_vX_x.ipynb | Creates and tests a very simple quantum model |
 | *Session&nbsp;2* | s02_medium_qestimator_vX_x.ipynb | Creates and tests a more complex quantum estimator |
